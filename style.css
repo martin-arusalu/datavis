@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "berlin";
+    src: url(BRLNSDB.TTF);
+}
+html { 
+  background: url(bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+svg {
+  height: 100vh;
+  display:block;
+  margin: auto;
+  opacity: 0;
+}
+
+.slightlyBigger {
+  font-size: 1.05rem !important;
+  fill: #a06148 !important;
+}
+
+#title tspan, #countrylabel, #bigcountryname, #comparison tspan,
+g .percentage, g .countryname,
+#populationlabel, #productionlabel, #incomelabel, #percentagelabel,
+#populationplaceholder, #productionplaceholder, #incomeplaceholder, #percentageplaceholder {
+  font-family: "berlin";
+}
+
+.countryname {
+  text-align: right;
+}
+
+.doNotShow {
+  opacity: 1;
+  animation: .5s hideElements forwards;
+}
+
+.show {
+  opacity: 0;
+  animation: .5s showElements forwards;
+}
+.hidden {
+  display: none;
+}
+
+.appear {
+  animation: 2s showElements forwards;
+}
+
+@keyframes showElements {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hideElements {
+  to {
+    opacity: 0;
+  }
+}
